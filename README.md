@@ -1,4 +1,4 @@
 # MvvmCross.Adapter.Ninject
 This is a Ninject IoC provider for MvvmCross. 
 
-Check wiki for how-to use or check Samples sln.
+Check wiki for how-to use.
