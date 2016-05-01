@@ -1,12 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Ninject.Modules;
 
 namespace MvvmCross.Adapter.Ninject
 {
-    class NinjectDependenciesProvider
+    public abstract class NinjectDependenciesProvider
     {
+        /// <summary>
+        /// Add platform specific INinjectModule here.
+        /// </summary>
+        /// <returns></returns>
+        protected abstract IEnumerable<INinjectModule> GetPlatformSpecificModules();
+
+        /// <summary>
+        /// Add your portable Ninject modules here.
+        /// </summary>
+        /// <returns></returns>
+        protected abstract IEnumerable<INinjectModule> GetPortableNinjectModules();
+
+        public IEnumerable<INinjectModule> GetNinjectModules()
+        {
+            foreach (var portableModule in GetPortableNinjectModules())
+                yield return portableModule;
+
+            foreach (var platformModule in GetPlatformSpecificModules())
+                yield return platformModule;
+        }
     }
+
+
 }
