@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Adapter.Ninject.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Adapter.Ninject.UWP", "MvvmCross.Adapter.Ninject.UWP\MvvmCross.Adapter.Ninject.UWP.csproj", "{0DAFF411-A98A-4713-A4A1-1D6298EAC5F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{E77369B2-1E56-4690-98C8-9EEF3ACB1649}"
+	ProjectSection(SolutionItems) = preProject
+		MvvmCross.Adapter.Ninject.nuspec = MvvmCross.Adapter.Ninject.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
