@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>MvvmCross.Adapter.Ninject</id>
+		<id>MvvmCross.Adapter.Ninject.NetStandard</id>
 		<version>4.1.4-rc1</version>
-		<title>MvvmCross.Adapter.Ninject</title>
-		<authors>thefex</authors>
-		<owners>Przemyslaw Raciborski</owners>
+		<title>MvvmCross.Adapter.Ninject.NetStandard</title>
+		<authors>thefex, Oxoproline</authors>
+		<owners>Przemyslaw Raciborski, Filip Mokry</owners>
 		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
-		<projectUrl>https://github.com/thefex/MvvmCross.Adapter.Ninject/</projectUrl>
+		<projectUrl>https://github.com/Oxoproline/MvvmCross.Adapter.Ninject</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
 			This is a Ninject MvxIoCProvider for MvvmCross.
@@ -17,12 +17,12 @@
 			<frameworkAssembly assemblyName="Mono.Android.Export" targetFramework="MonoAndroid" />
 		</frameworkAssemblies>
 		<dependencies>
-			<dependency id="MvvmCross" version="4.1.4"/>
-			<dependency id="Portable.Ninject" version="3.3.1"/>
+			<dependency id="MvvmCross" version="5.6.3"/>
+			<dependency id="Ninject" version="3.3.4"/>
 		</dependencies>
 	</metadata>
 	<files>		
-		<!-- PCL -->
+		<!-- .NetStandard -->
 		<file src="MvvmCross.Adapter.Ninject\bin\Release\MvvmCross.Adapter.Ninject.dll" target="lib\portable-net45+win+wpa81" />
 
 		<!-- droid -->
@@ -30,12 +30,6 @@
 
 		<!-- iOS -->
 		<file src="MvvmCross.Adapter.Ninject.iOS\bin\Release\MvvmCross.Adapter.Ninject.dll" target="lib\Xamarin.iOS10" />
-
-		<!-- wp winrt 8.1 -->
-		<file src="MvvmCross.Adapter.Ninject.WP81\bin\Release\MvvmCross.Adapter.Ninject.dll" target="lib\wpa81" />
-    
-		<!-- uap -->
-		<file src="MvvmCross.Adapter.Ninject.UWP\bin\Release\MvvmCross.Adapter.Ninject.dll" target="lib\uap" />
   </files>
 </package>
 
