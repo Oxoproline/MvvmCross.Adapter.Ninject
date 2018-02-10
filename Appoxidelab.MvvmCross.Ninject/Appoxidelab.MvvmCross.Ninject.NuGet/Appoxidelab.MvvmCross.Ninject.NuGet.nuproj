@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}</ProjectGuid>
+    <Description>Appoxidelab.MvvmCross.Ninject</Description>
+    <PackageId>Appoxidelab.MvvmCross.Ninject</PackageId>
+    <PackageVersion>5.6.4</PackageVersion>
+    <Authors>Filip Mokry</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Appoxidelab.MvvmCross.Ninject.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Appoxidelab.MvvmCross.Ninject.NugetOrg</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Owners>Filip Mokry</Owners>
+    <Summary>This is a Ninject MvxIoCProvider for MvvmCross using .NetStandard.
+</Summary>
+    <PackageProjectUrl>https://github.com/Oxoproline/MvvmCross.Adapter.Ninject</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/ms-pl.html</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="readme.txt">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.0</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Appoxidelab.MvvmCross.Ninject\Appoxidelab.MvvmCross.Ninject.csproj">
+      <Project>{0E0D73DC-CCAB-4211-B28A-89316EE7E1B8}</Project>
+      <Name>Appoxidelab.MvvmCross.Ninject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Appoxidelab.MvvmCross.Ninject.iOS\Appoxidelab.MvvmCross.Ninject.iOS.csproj">
+      <Project>{76F2E635-6E34-42D9-B8BD-DF260D689B30}</Project>
+      <Name>Appoxidelab.MvvmCross.Ninject.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Appoxidelab.MvvmCross.Ninject.Android\Appoxidelab.MvvmCross.Ninject.Android.csproj">
+      <Project>{E0DC3861-1EC9-4B85-A8C5-A2AF54DA6FF4}</Project>
+      <Name>Appoxidelab.MvvmCross.Ninject.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="5.6.3" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+  </ItemGroup>
+  <Import Project="..\Appoxidelab.MvvmCross.Ninject.Shared\Appoxidelab.MvvmCross.Ninject.Shared.projitems" Label="Shared" Condition="Exists('..\Appoxidelab.MvvmCross.Ninject.Shared\Appoxidelab.MvvmCross.Ninject.Shared.projitems')" />
+</Project>
