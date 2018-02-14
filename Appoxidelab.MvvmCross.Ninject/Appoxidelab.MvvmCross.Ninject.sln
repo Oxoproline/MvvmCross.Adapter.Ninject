@@ -9,7 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appoxidelab.MvvmCross.Ninje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appoxidelab.MvvmCross.Ninject", "Appoxidelab.MvvmCross.Ninject\Appoxidelab.MvvmCross.Ninject.csproj", "{0E0D73DC-CCAB-4211-B28A-89316EE7E1B8}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Appoxidelab.MvvmCross.Ninject.NuGet", "Appoxidelab.MvvmCross.Ninject.NuGet\Appoxidelab.MvvmCross.Ninject.NuGet.nuproj", "{BD0C968B-7C92-4FA6-8EEB-55727F173488}"
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Appoxidelab.MvvmCross.Ninject.NuGet", "Appoxidelab.MvvmCross.Ninject.NuGet\Appoxidelab.MvvmCross.Ninject.NuGet.nuproj", "{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appoxidelab.MvvmCross.Forms.Ninject.Android", "Appoxidelab.MvvmCross.Forms.Ninject.Android\Appoxidelab.MvvmCross.Forms.Ninject.Android.csproj", "{29672C66-FC33-4C2A-9D6D-2866F7C5B8D8}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Appoxidelab.MvvmCross.Forms.Ninject.Nuget", "Appoxidelab.MvvmCross.Forms.Ninject.Nuget\Appoxidelab.MvvmCross.Forms.Ninject.Nuget.nuproj", "{4B3A19D2-824F-44C2-9898-192984356722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appoxidelab.MvvmCross.Forms.Ninject.iOS", "Appoxidelab.MvvmCross.Forms.Ninject.iOS\Appoxidelab.MvvmCross.Forms.Ninject.iOS.csproj", "{92A90F29-AE3C-4B13-BE05-C8EB1B43B7CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +35,21 @@ Global
 		{0E0D73DC-CCAB-4211-B28A-89316EE7E1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E0D73DC-CCAB-4211-B28A-89316EE7E1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E0D73DC-CCAB-4211-B28A-89316EE7E1B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD0C968B-7C92-4FA6-8EEB-55727F173488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD0C968B-7C92-4FA6-8EEB-55727F173488}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD0C968B-7C92-4FA6-8EEB-55727F173488}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD0C968B-7C92-4FA6-8EEB-55727F173488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ADEF5FA-F29E-4AB8-991E-106397F8DA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29672C66-FC33-4C2A-9D6D-2866F7C5B8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29672C66-FC33-4C2A-9D6D-2866F7C5B8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29672C66-FC33-4C2A-9D6D-2866F7C5B8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29672C66-FC33-4C2A-9D6D-2866F7C5B8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B3A19D2-824F-44C2-9898-192984356722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3A19D2-824F-44C2-9898-192984356722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3A19D2-824F-44C2-9898-192984356722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3A19D2-824F-44C2-9898-192984356722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A90F29-AE3C-4B13-BE05-C8EB1B43B7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A90F29-AE3C-4B13-BE05-C8EB1B43B7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A90F29-AE3C-4B13-BE05-C8EB1B43B7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A90F29-AE3C-4B13-BE05-C8EB1B43B7CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

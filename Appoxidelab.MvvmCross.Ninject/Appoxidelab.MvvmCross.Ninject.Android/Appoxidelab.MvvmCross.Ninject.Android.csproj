@@ -37,7 +37,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NinjectMvxDroidSetup.cs" />
-    <Compile Include="NinjectDroidDependenciesProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
